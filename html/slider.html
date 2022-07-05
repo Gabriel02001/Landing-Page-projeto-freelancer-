@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/slider_images.css">
+    <link rel="stylesheet" href="/style/global.css">
+    <title>Cardápio</title>
+    
+</head>
+<body>
+    
+    <div class="content">
+       
+
+ <!-- menu -->
+    <header>
+        <div id="menu-mobile-content">
+            <div id="btn-menu" onclick="menu()">     
+             <div class="bar-1"></div>
+             <div class="bar-2"></div>
+             <div class="bar-3"></div>
+            </div>
+         </div>
+         <nav  >
+             <ul class="nav-list">
+                <li class="link"> <img src="" alt=""> <a href="/home.html">Home</a></li>
+                <li class="link"><a href="/institucional.html">Institucional</a></li>
+                <li class="link"><a href="/cardapio.html">Cardápio</a></li>
+                <li class="link"><a href="/contato.html">Contato</a></li>
+             </ul>
+         </nav>
+    </header>
+  
+  <div class="content-carousel">
+   
+
+    <div class="tilte"><h1>Company Menu Here</h1></div>
+    <!-- conteudo -->
+    <div class="container">
+      <div class="safe">
+        <div class="slider-body">
+            <div class="slider-arrows">
+                <!-- <div id="arrow-1" class="arrow arrow-left"> <div></div></div>
+                <div id="arrow-2" class="arrow arrow-right"><div></div></div> -->
+            </div>
+            <div id="slider" class="owl-carousel owl-theme owl-loaded">
+
+                <div class="slider-item">
+                    <div class="slider-img-body">
+                        <img src="/assets/produtos/torta.jfif" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-date">Sobremesas</h3>
+                             <p class="slider-description">
+                                 
+                             </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-img-body">
+                        <img src="/assets/produtos/pao_de_queijo.jfif" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-date">Salgados</h3>
+                             <p class="slider-description">
+                                 
+                             </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-img-body">
+                        <img src="/assets/produtos/espaguete.jfif" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-date">Refeições</h3>
+                             <p class="slider-description">
+                                
+                             </p>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-img-body">
+                        <img src="/assets/produtos/cha.jfif" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-date">Bebidas Geladas</h3>
+                             <p class="slider-description">
+                               
+                             </p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="slider-item">
+                    <div class="slider-img-body">
+                        <img src="/assets/produtos/cafe.jfif" alt="">
+                        <div class="slider-info">
+                            <h3 class="slider-date">Bebidas Quentes</h3>
+                             <p class="slider-description">
+                                
+                             </p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="qr_code">
+            <div class="qr_code_content">
+            <!-- em breve -->
+             <img src="/assets/qr_code.png" alt="qr-code">
+             <p>acesse o cardapio <br> pelo qrcode </p>
+            </div>
+        </div>
+    </section>
+    <section class="opening_hours">
+        <h2>Horário de funcionamento do café</h2>
+         <div class="hours">
+             <p>Segunda a sexta: 07:30 às 19:00</p>
+             <p>Sábado das: 08:30 às 18:00</p>
+         </div>
+       </section>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+   <script>
+// // var owl = $('.owl-carousel');
+// // owl.owlCarousel();
+// // // Go to the next item
+// // $('.customNextBtn').click(function() {
+// //     owl.trigger('owl.prev');
+// // })
+// // // Go to the previous item
+// // $('.customPrevBtn').click(function() {
+// //     owl.trigger('owl.next');
+// // })
+
+
+        $(document).ready(function() 
+    {
+        $('#slider').owlCarousel({
+            loop: true,
+        
+            dots:false,
+            center:true,
+             
+             nav:true,
+             autoWidth:true,
+            
+             navText : ['<div id="arrow-1" class="arrow arrow-left"> <div></div></div>',' <div id="arrow-2" class="arrow arrow-right"><div></div></div>'],
+            
+            
+               
+      
+            responsive:
+            {
+                550:
+                {
+                    items:1
+                },
+                620:
+                {
+                    items:2
+                },
+                750:
+                {
+                    items:3
+                },
+                1070:
+                {
+                    items:4
+                },
+                
+            }
+    
+
+        })
+    });
+
+
+//     const owl = $('.owl-carousel');
+// owl.owlCarousel();
+// // Go to the next item
+// $('.arrow.arrow-right').click(function() {
+//     owl.trigger('next.owl.carousel');
+// })
+// // Go to the previous item
+// $('.arrow.arrow-left').click(function() {
+//     // With optional speed parameter
+//     // Parameters has to be in square bracket '[]'
+//     owl.trigger('prev.owl.carousel', [300]);
+// })
+
+    
+
+    //teste
+    // $(document).ready(function() 
+    // {
+    //     $('#slider').owlCarousel({
+    //         loop: true,
+    //         dots:false,
+    //         center:true,
+             
+    //         nav:true,
+    //         autoWidth:true,
+      
+      
+    //         responsive:
+    //         {
+    //             0:
+    //             {
+    //                 items:1
+    //             },
+    //             750:
+    //             {
+    //                 items:3
+    //             },
+    //             1070:
+    //             {
+    //                 items:4
+    //             }
+    //         }
+    //     })
+    // });
+   </script>
+ </div>
+</div>
+</div>
+ <script src="/js/menu.js"></script>
+</body>
+
+</html>

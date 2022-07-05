@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/global.css">
+    <link rel="stylesheet" href="/style/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+
+    <title>Contato</title>
+</head>
+<div class="teste"></div>
+<body>
+  <div class="content"> 
+    
+
+    <header>
+      <div id="menu-mobile-content">
+        <div id="btn-menu" onclick="menu()">     
+         <div class="bar-1"></div>
+         <div class="bar-2"></div>
+         <div class="bar-3"></div>
+        </div>
+     </div>
+     <nav >
+         <ul class="nav-list">
+            <li class="link"> <img src="" alt=""> <a href="/html/home.html">Home</a></li>
+            <li class="link"><a href="/html/institucional.html">Institucional</a></li>
+            <li class="link"><a href="/html/cardapio.html">Cardápio</a></li>
+            <li class="link"><a href="/html/contato.html">Contato</a></li>
+         </ul>
+     </nav>
+    </header>
+   
+
+    <main class="container">
+      <div class="horarios">
+       
+          <h2>Horário de funcionamento: </h2>
+           <div class="hours">
+               <p> <strong>Segunda a sexta:</strong>  07:30 às 19:00</p>
+               <p><strong>Sábado das:</strong> 08:30 às 18:00</p>
+           </div>
+         <!-- </section> Segunda a sexta:"
+- Completaar: "Sábado das -->
+      </div>
+      <div class="endereco">
+        <section class="endereco_caneca_cafe">
+          <h2>Endereço</h2>
+           <div class="rua">
+               <p>  Rua Lorem ipsum dolor sit amet.<br> São Paulo</p>
+               <p>ipsum dolor.  <strong>Lorem, ipsum.</strong>  <br> (Lorem, ipsum dolor.)</p>
+           </div>
+         </section>
+      </div>
+      <div class="map">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.4200392463426!2d-46.52366098502442!3d-23.445308584740605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5317efa0f3b%3A0xa547eb6cca1a9955!2sMcDonald&#39;s!5e0!3m2!1spt-BR!2sbr!4v1651785584183!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3155806869586!2d-46.63233864937208!3d-23.593012484591927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bd2ed9d7d83%3A0xb0ca3e7959f39c8!2sRua%20Vergueiro%2C%203808%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004102-002!5e0!3m2!1spt-BR!2sbr!4v1654128796464!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+     </div>  
+      <div class="redes">
+        <section class="redes_sociais">
+          <h2>Conheça nossas redes sociais</h2>
+            <a href="#" target="_blank"> <img src="/assets/ins.svg" alt=""> @Loreipsum </a>
+            <a href="#" target="_blank"><img src="/assets/fb.svg" alt="">@Loremipsum </a>
+          
+         </section>
+      </div>
+      <div class="formulario">
+        <h2>Company Mail</h2>
+        <form id="my-form" action="https://api.staticforms.xyz/submit" method="post" id="staticform"> 
+         <div class="form-content">
+          <!-- Replace with your StaticForms accessKey 6e6edad5-b9ea-4555-8952-0d869f82b30f -->
+          <input type="hidden" name="accessKey" value="">
+         <input type="hidden" name="subject" value=""> 
+          <!-- Replace with the url you want to redirect to  -->
+          <input type="hidden" name="redirectTo" value="#">
+          <div class="field">
+            <label class="label">Assunto<span>*</span> </label>
+            <div class="control">  
+                <select name="subject" id="" required>
+                   <option value="" selected disabled hidden >Selecione o assusto</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Outros">Outros</option>
+                   
+                    
+                  </select> 
+                  <div class="irmao"></div>
+                  
+               <!-- <input class="input" type="radio" name="subject" placeholder="Assuntos" required>  -->
+             </div>
+          </div>
+         <div class="field">
+           <label class="label">Nome<span>*</span></label>
+           <div class="control">
+             <input class="input" type="text" name="name" placeholder="" required>
+           </div>
+         </div>
+         <div class="field">
+           <label class="label">E-mail<span>*</span></label>
+           <div class="control">
+             <input class="input" type="email" name="email" placeholder="" required>
+           </div>
+         </div> 
+         
+         <div class="field">
+           <label class="label">Celular</label>
+           <div class="control">
+             <input class="input" type="text" name="phone" placeholder="">
+           </div>
+         </div>
+         <div class="field" id="msg">
+           
+           <div class="control" 
+           style="height: 14.1rem;
+                  max-width: 65rem;">
+             <textarea class="textarea"  name="message" placeholder="Digite aqui"  required></textarea>
+           </div>
+           <label class="label" id="label_textarea" style="visibility: hidden;">Mensagem</label>
+         </div>
+         <!-- <button class="button is-primary" type="Submit">Submit</button> -->
+        </div>
+       </form>
+       <div class="button">
+       <button form="my-form"  type="Submit" >Enviar</button>
+       </div>
+      </div>
+   
+        
+
+    
+
+       
+
+        
+
+    </main>
+    <script src="/js/menu.js"></script>
+   </div>
+</body>
+</html>
+
+<!--      
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform"> 
+               Replace with your StaticForms accessKey 
+               <input type="hidden" name="accessKey" value="e0820428-6d52-4d15-9afe-b54979531973">
+              <input type="hidden" name="subject" value="Test from jsfiddle"> 
+               Replace with the url you want to redirect to 
+               <input type="hidden" name="redirectTo" value="">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="Enter Your Name" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+              </div> 
+              <div class="field">
+                <label class="label">Assunto</label>
+                <div class="control">
+                    <select name="subject" id="" required>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select> 
+                   <input class="input" type="radio" name="subject" placeholder="Assuntos" required> 
+                 </div>
+              </div>
+              <div class="field">
+                <label class="label">phone</label>
+                <div class="control">
+                  <input class="input" type="text" name="phone" placeholder="Enter Your phone" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" placeholder="Enter Your Message" required></textarea>
+                </div>
+              </div>
+              <button class="button is-primary" type="Submit">Submit</button>
+            </form> -->
+       
+
+
+

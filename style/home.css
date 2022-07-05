@@ -1,0 +1,202 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    /* overflow: hidden; */
+    overflow:hidden;
+
+    height: 100%;
+    background: rgba(234,228,230,0.7);
+    /* padding-top: 2.4rem;
+    overflow-x: hidden;
+    background-size: 1863px;
+    background-position-x: -293px;
+    background-position-y: center; */
+}
+
+.content {
+    position: relative;
+    width: 1530px;
+    width: 100%;
+    max-width: 1530px;
+    /* overflow: hidden; */
+    margin: auto;
+  }
+
+#bg-left{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    top: -270px;     
+    left: -250px;
+}
+
+#bg-left > img{
+    height: 800px;
+    width: 950px;
+    position: absolute;
+    /* z-index: 999; */
+    opacity: 0.4;
+}
+
+#bg-right{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    top: 180px;    
+    left: 770px;
+}
+
+#bg-right > img{
+    height: 800px;
+    width: 950px;
+    position: fixed;
+    /* z-index: 999; */
+    opacity: 0.4;
+}
+
+/* NAVBAR */
+
+.nav-list li:nth-child(1) {
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+/* .nav-list li{
+    padding-bottom: 8px;
+} */
+.nav-list li:first-child{
+    font-weight: 700;
+}
+
+main{
+    
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ width:100%;
+}
+
+main .logo_cafe{
+   /* margin: 85px 0; */
+   position: relative;
+   /* top: -55px; */
+}
+
+/* main .logo_cafe h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    position: absolute;
+    top: 184px;
+    left: 210px;
+} */
+
+main .logo_cafe #logo{
+    /* width: 709px;
+    height: 484px;
+    background: url("/assets/Logo_Caneca.svg"); */
+}
+
+main .logo_cafe #logo img{
+    /* width: 709px;
+    height: 415px; */
+    width: 100%;
+    max-height: 717px;
+    max-width: 600px;
+    height: 500px;
+    width: 400px;
+}
+
+main .opening_hours{
+    position: relative;
+    bottom: 45px;
+    margin-bottom: 70px;
+    /* margin-top: 200px; */
+}
+
+main .opening_hours h2{
+    /* font-size: 20px;
+    font-weight: 700; */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+
+}
+main .opening_hours .hours p {
+        /* font-size: 20px; */
+    /* font-weight: 700; */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 30px; */
+    text-align: center;
+    
+    
+}
+
+main .opening_hours .hours{
+   
+    margin-top: 14px;
+    
+}
+
+
+
+@media (max-width: 810px) {
+    body{
+        overflow: initial;
+        overflow-x: hidden;
+    }
+    main .logo_cafe{ 
+        top: 10px;
+    }
+
+}
+
+/* @media (max-width: 510px){
+    body {
+        overflow-x: hidden;
+    }
+ } */
+
+ /* @media (max-width: 600px){
+main .opening_hours {
+    bottom: -232px;
+ }
+}
+ */
+/* @media (max-width: 510px){
+main .logo_cafe {
+    top: -90px;
+ }
+} */
+
+ 
+
+@media (max-width: 510px){
+
+main .opening_hours{
+    bottom: 0;
+}
+} 
+
+
+
+
+

@@ -1,0 +1,390 @@
+html,
+body{
+height: 100%;
+width: 100%;
+}
+
+.nav-list li:nth-child(4) {
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 25%)
+}
+
+.content {
+  position: relative;
+  width: 1530px;
+  width: 100%;
+  max-width: 1530px;
+  /* overflow: hidden; */
+  margin: auto;
+}
+
+
+
+#bg-left{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+  top: -232px;
+  left: -325px;
+}
+
+#bg-left > img{
+  height: 1080px;
+  width: 1080px;
+  position: absolute;
+  /* z-index: 999; */
+  opacity: 0.4;
+}
+
+#bg-right{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -54px;
+  left: 837px;
+}
+
+#bg-right > img{
+  height: 1050px;
+  width: 1050px;
+  position: absolute;
+  /* z-index: 999; */
+  opacity: 0.4;
+}
+
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-areas:
+   "horarios redes"
+   "endereco formulario"
+   "map formulario";
+   flex: 1;
+   grid-column-gap: 10%;
+   padding-left: 8px;
+   margin-bottom: 9px;
+   grid-template-columns: minmax(100px, 49rem);
+   padding: 5px;
+}
+  
+.horarios{
+  grid-area: horarios;
+  background: rgba(234, 0, 255, 0);
+  
+
+  margin-top: 22px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horarios h2{
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 3.4rem;
+margin-bottom: 35px;
+
+
+}
+.horarios  p{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+
+
+.endereco{
+  grid-area: endereco;
+  background: rgba(255, 0, 0, 0);
+  
+  position: relative;
+ 
+}
+
+.endereco .endereco_caneca_cafe h2{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 3.4rem;
+margin-bottom: 2.2rem;
+margin-top: 1.0rem;
+
+}
+
+.endereco .endereco_caneca_cafe .rua{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5rem;
+  
+  padding-right: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.endereco .endereco_caneca_cafe .rua p:first-child{
+ margin-bottom: 20px;
+}
+
+
+
+.map{
+  grid-area: map;
+  height: 265px; 
+  background: #CECBCB;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
+}
+
+.redes{
+  grid-area: redes;
+  background: rgba(255, 0, 0, 0);
+  
+
+  margin-top: 25px;
+}
+
+.redes .redes_sociais {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes .redes_sociais a > img {
+ height: 50px;
+}
+
+.redes .redes_sociais h2 {
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 3.2rem;
+margin-top: 1.5rem;
+}
+
+.redes .redes_sociais a{
+display: flex;
+align-items: center;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 300;
+font-size: 2.3rem;
+gap: 1.5rem;
+width: 51px;
+
+margin-top: 15px;
+margin-left: 15px;
+
+
+color: #000000;
+}
+
+
+.formulario{
+  grid-area: formulario;
+  background: #cecbcb00;
+  
+}
+
+.formulario h2{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 3.2rem;
+margin-bottom: 2.2rem;
+margin-top: 1.0rem
+}
+
+.formulario form .field{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 2.2rem;
+
+}
+
+.formulario form .field label:first-child{
+  /* width: 8rem;width: 82px; */
+  width: 105px;
+}
+.formulario form .field label span{
+  color: #FB2E2E;
+}
+.formulario form #msg{
+  display: block;
+  margin-bottom: 0;
+}
+
+.formulario form .field .control{
+  width: 100%;
+  max-width: 52rem;
+}
+
+
+
+.formulario form .field input{
+  padding: 1.2rem;
+}
+.formulario form .field .control:focus-within::after { 
+  width: calc(100% - 3.2rem);
+  height: 2px;
+  content: '';
+ 
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
+ }
+
+.formulario form .field select{
+
+ background: #FFFFFF;
+ opacity: 0.5;
+ border: 0.5px solid #000000;
+ border-radius: 20px;
+ width: 100%;
+ height: 5.5rem;
+ padding: 1rem;
+}
+.formulario form .field textarea{
+  opacity: 0.5;
+  border: 0.5px solid #000000;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.formulario form input{
+  background: #FFFFFF;
+  opacity: 0.5;
+  border: 0.5px solid #000000;
+  border-radius: 20px;
+
+  width: 100%;
+  height: 45px;
+}
+
+#label_textarea{
+  font-size: 10px;
+    position: relative;
+    float: revert;
+    right: 102px;
+   
+    float: right;
+}
+
+button[type="Submit"]:active {
+  color: #6C3506;
+  background: transparent;
+  border: solid 2px;
+  transform: translateY(3px);
+}
+
+button[type="Submit"] {
+  background: #6C3506;
+  border-radius: 20px;
+  padding: 7px;
+  padding: 8px 20px;
+  cursor: pointer;
+  /* margin: 10px; */
+  color: white;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  position: top;
+  position: relative;
+  top: 6px;
+  border: solid 2px;
+  transition: transform 0.2s;
+}
+  
+
+ 
+/* .textarea{
+  width: 62rem;
+    height: 11rem;
+} */
+
+
+@media (max-width: 1116px) {
+.container{
+
+  grid-column-gap: 5%;
+  
+
+}
+}
+
+@media (max-width: 810px) {
+  body{
+    overflow: initial;
+    overflow-x: hidden;
+  }
+  .container{
+  
+position: relative;
+/* top: 150px; */
+  
+ /* grid-template-areas:
+"horarios"
+"endereco "
+"map"
+"redes"
+"formulario"
+"formulario"; */
+ grid-template-areas:
+
+"horarios"
+"formulario"
+"formulario"
+ "endereco"
+ "map"
+ "redes";
+
+justify-content: center;
+  
+    }
+    .endereco .endereco_caneca_cafe h2 {
+      margin-top: 15px
+    }
+  }
+
+@media (max-width: 510px) {
+
+  
+  .formulario h2 {
+    margin-top: 5rem;
+  }
+  .endereco .endereco_caneca_cafe h2 {
+    margin-top: 30px;
+  }
+  .redes .redes_sociais {
+    
+    padding-bottom: 40px;
+  }
+}
+
+
+

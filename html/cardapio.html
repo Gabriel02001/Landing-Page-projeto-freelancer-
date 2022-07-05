@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+   
+
+    <link rel="stylesheet" href="/style/global.css">
+    <link rel="stylesheet" href="/style/cardapio.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="content"
+  style="    position: relative;
+  width: 1530px;
+  width: 100%;
+  max-width: 1530px;
+  /* overflow: hidden; */
+  margin: auto;"
+  >
+  <header>
+    <div id="menu-mobile-content">
+      <div id="btn-menu" onclick="menu()">     
+       <div class="bar-1"></div>
+       <div class="bar-2"></div>
+       <div class="bar-3"></div>
+      </div>
+   </div>
+   <nav >
+       <ul class="nav-list">
+          <li class="link"> <img src="" alt=""> <a href="/html/home.html">Home</a></li>
+          <li class="link"><a href="/html/institucional.html">Institucional</a></li>
+          <li class="link"><a href="/html/cardapio.html">Cardápio</a></li>
+          <li class="link"><a href="/html/contato.html">Contato</a></li>
+       </ul>
+   </nav>
+  </header>
+    <main>
+        <div class="container">
+            <h1>Company Name Here</h1>
+
+
+            <!-- <section class="seekers"> -->
+            <!-- navbar search -->
+                <div class="container_search_bar">
+                   <!-- input tag -->
+    <input id="searchbar"  type="text"
+    name="search" placeholder="Search animals..">
+  
+
+                </div>
+    <!-- </section> -->
+           <!-- filters -->
+           <!-- bolos sorteve bombom torta doce frances e doce folheado -->
+           <input type="radio" id="All" name="categories" value="All" checked>
+           <input type="radio" id="Bolo" name="categories" value="Bolo">
+           <input type="radio" id="Torta" name="categories" value="Torta">
+           <input type="radio" id="DoceFrances" name="categories" value="DoceFrances">
+           <input type="radio" id="MassaFolhada" name="categories" value="MassaFolhada">
+           <input type="radio" id="Slider" name="categories" value="Slider">
+           <input type="radio" id="Sorvete" name="categories" value="Sorvete">
+            
+            <ol class="filters">
+                <li>
+                    <label for="All">Todos</label>
+                </li>
+                <li>
+                  <label for="Bolo">
+                    <!-- <div class="circle"></div> -->
+                    Bolo</label>
+                </li>
+                 <li>
+                    <label for="Torta">Torta</label>
+                </li>
+                <li>
+                    <label for="DoceFrances">Doce Frances</label>
+                </li>
+                <li>
+                    <label for="MassaFolhada">Massa Folhada</label>
+                </li>
+                <!-- <li>
+                    <label for="Slider">sal</label>
+                </li> -->
+                <li>
+                    <label for="Sorvete">Sorvete</label>
+                </li>
+                <li>
+                  <label for="Waffle">Waffle</label>
+              </li>
+            </ol>
+                
+        
+
+            <!-- <section class="list_foods"> -->
+               <!-- posts -->
+    <ol class="posts">
+        <li class="post" data-category="Torta">
+          <article>
+            <figure>
+               <div class="picture">
+                <img src="/assets/produtos/strawberries-3285333_1920.jpg" alt="">
+              </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                 Torta de morango
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>Torta</p> 
+                  </li>
+                </ol>
+                <!-- <div class="arrow">
+                  <img src="" alt="">
+                </div> -->
+              </figcaption>
+            </figure>
+            <!-- <div class="desc">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam provident ducimus deltetur sit archum aperiam, aspernatur ex similique. Expedita ipsa eligendi est!</p>
+            </div> preciso definir todos os post com max-heith 160px e quando desc for exibida preciso que o max-heith desse post aumenta para que empurre o de baixo           -->
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+
+        </li>
+        <li class="post" data-category="Bolo">
+          <article>
+            <figure>
+               <div class="picture" style="height: 124px">
+                <img src="/assets/produtos/cake-1971552_1920.jpg" alt="" style=" height: 124px">
+              </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                 Bolo de Chocolate
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>Bolo</p> 
+                  </li>
+                </ol>
+                <!-- <div class="arrow">
+                  <img src="" alt="">
+                </div> -->
+              </figcaption>
+            </figure>
+            <!-- <div class="desc">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam provident ducimus deltetur sit archum aperiam, aspernatur ex similique. Expedita ipsa eligendi est!</p>
+            </div> preciso definir todos os post com max-heith 160px e quando desc for exibida preciso que o max-heith desse post aumenta para que empurre o de baixo           -->
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+
+        </li>
+        <li class="post" data-category="DoceFrances MassaFolhada">
+          <article>
+            <figure>
+               <div class="picture">
+                <img src="/assets/produtos/macaroon-7291242_1920.jpg" alt="">
+              </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                Macaroon
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>Doce frances</p> 
+                  </li>
+                  <li>
+                    <p> Massa Folhada</p>
+                  </li>
+                </ol>
+                <!-- <div class="arrow">
+                  <img src="" alt="">
+                </div> -->
+              </figcaption>
+            </figure>
+            <!-- <div class="desc">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam provident ducimus deltetur sit archum aperiam, aspernatur ex similique. Expedita ipsa eligendi est!</p>
+            </div> preciso definir todos os post com max-heith 160px e quando desc for exibida preciso que o max-heith desse post aumenta para que empurre o de baixo           -->
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+
+        </li>
+        
+        <li class="post" data-category="Waffle Sorvete">
+          <article>
+            <figure>
+             <div class="picture">
+                <img src="/assets/produtos/waffle-4608843_1920.jpg" alt="">
+             </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                 Waffle
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>Sorvete</p> 
+                  </li>
+                  <li>
+                    <p>Waffle</p>
+                  </li>
+                </ol>
+              </figcaption>
+            </figure>
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+        </li>
+        <li class="post" data-category="DoceFrances MassaFolhada">
+          <article>
+            <figure>
+              <div class="picture">
+                <img src="/assets/produtos/Banana-Nutella-Crepes-4.jpg.webp" alt="">
+              </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                Crepe Suzete
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>DoceFrances </p> 
+                  </li>
+                  <li>
+                    <p>MassaFolhada</p>
+                  </li>
+                </ol>
+              </figcaption>
+            </figure>
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+        </li>
+        <li class="post" data-category="Sorvete">
+          <article>
+            <figure>
+               <div class="picture">
+                <img src="/assets/produtos/shaved-ice-1716100_1920.jpg" alt="">
+              </div>
+              <figcaption>
+              
+                <h2 class="post-title">
+                 Sorvete com Waffle
+                </h2>
+                <ol class="post-categories">
+                  <li>
+                   <p>Sorvete</p> 
+                  </li>
+                </ol>
+              </figcaption>
+            </figure>
+          </article>
+          <div class="desc">
+            <div class="content">
+            <h3>Ingredientes</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          </div>
+          <div class="arrow"> > </div>
+        </li>
+        
+    
+    </ol>
+            <!-- </section> -->
+
+        </div>
+    </main>
+    <!-- linking javascript -->
+    
+  </div>
+  <script src="/js/script_search.js"></script>
+  <script src="/js/menu.js"></script>
+</body>
+</html>

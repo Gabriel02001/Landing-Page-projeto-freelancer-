@@ -1,0 +1,189 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+}
+
+/* NAVBAR */
+.nav-list li:nth-child(2){
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  position: relative;
+  width: 1530px;
+  width: 100%;
+  max-width: 1530px;
+  /* overflow: hidden; */
+  margin: auto;
+}
+
+
+#bg-left{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -313px;
+  left: -341px;
+  left: -340px;
+}
+
+#bg-left > img{
+  height: 1130px;
+  width: 1080px;
+  position: absolute;
+  /* z-index: 999; */
+  opacity: 0.4;
+}
+
+#bg-right{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -54px;
+  left: 837px;
+}
+
+#bg-right > img{
+  height: 1050px;
+  width: 1050px;
+  position: fixed;
+  /* z-index: 999; */
+  opacity: 0.4;
+}
+
+
+
+/* MAIN */
+main{
+  height: 85vh;
+  width: 100%;
+  min-height: 440px;
+  max-height: 900px;
+  justify-content: center;
+  /* align-items: center; */
+  color: #434343;
+  font-size: 16px;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* CARDS */
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .card{
+    margin-left: 30px;
+    background-color: white;
+    /* height: 580px; */
+    width-max: 47rem;
+    max-height: 500px;
+    width: 100%;
+    max-width: 47rem;
+    min-width: 40rem;
+    background: transparent;
+    max-height: 428px;
+  }
+  
+  .card-body{
+  
+padding: 70px;
+  
+padding-top: 35px;
+  
+display: flex;
+  
+flex-direction: column;
+  
+align-items: center;
+  
+gap: 20px;
+  
+font-family: 'Quicksand';
+  
+font-style: normal;
+  
+font-weight: 300;
+  
+font-size: 2.5rem;
+  
+/* min-height: 356px; */
+  
+/* max-height: 500px; */
+  }
+
+  .card-body p{
+      text-align: justify;
+  }
+  
+  h2{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.0rem;
+  }
+  
+  .card button{
+    padding: 8px;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 5.0rem;
+   
+  }
+  
+  /* .card-contact{
+    border: solid 2px black;
+  }
+  .card-shop{
+    border: solid 2px black;
+  }
+  .card-about-us{
+    border: solid 2px black;
+  } */
+  
+  /* .container .card-contact button{
+     background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+  } */
+  
+  
+  
+  img{
+   
+  }
+  
+  @media(max-width: 1030px){
+
+    body{
+      overflow: initial;
+      overflow-x: hidden;
+    }
+   
+    .content {
+      position: relative; 
+      width: initial; 
+      overflow: initial; 
+      margin: initial;
+    }
+
+   .container{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     align-items: center;
+     position: relative;
+     top: 612px;
+   }
+  
+   main{
+    margin-top: -120px;
+   }
+   
+  }
