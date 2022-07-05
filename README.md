@@ -7,5 +7,6 @@ Versão Desktop
 
 Versão Mobile
 
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/101219161/177370575-a8a642f2-58b0-4b85-a726-a071916d2560.gif)
 
 Variação da Tela de Cardápio
