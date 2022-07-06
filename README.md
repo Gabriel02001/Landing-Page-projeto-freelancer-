@@ -15,7 +15,7 @@ Variação da Tela de Cardápio
 
  Tecnologias
  
-HTML, CSS, JavaScript, e Jquery
+HTML, CSS, Masonry GRID, JavaScript e Jquery
 
 Serviços
 
