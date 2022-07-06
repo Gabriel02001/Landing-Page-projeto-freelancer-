@@ -19,4 +19,4 @@ HTML, CSS, JavaScript, Bootstrap, Jquery
 
 Serviços
 
-Api.Staticforms(api usada para enviar as informações formulario para o email de contato)
+Staticforms - API usada para enviar os dados do formulário  para o email de contato
