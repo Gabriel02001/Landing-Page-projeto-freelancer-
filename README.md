@@ -12,3 +12,7 @@ Versão Mobile
 Variação da Tela de Cardápio
 
 ![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/101219161/177371241-6f016566-8689-4173-9db1-cb9611675f3f.gif)
+
+ Tecnologias
+ 
+HTML, CSS, JavaScript, Bootstrap, Jquery
