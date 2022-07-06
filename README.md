@@ -16,3 +16,7 @@ Variação da Tela de Cardápio
  Tecnologias
  
 HTML, CSS, JavaScript, Bootstrap, Jquery
+
+Serviços
+
+Api.Staticforms(api usada para enviar as informações formulario para o email de contato)
